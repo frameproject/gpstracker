@@ -11,6 +11,7 @@ import java.util.HashMap;
  * <h4>Controleur de MainActivity</h4>
  *
  * @author fredericamps@gmail.com
+ *
  */
 public class Controller {
 
@@ -22,10 +23,13 @@ public class Controller {
     ManageSettings manageData;
     MainActivity myActivity;
 
+
     /**
      * Constructeur
      *
+     *
      * @param myContext
+     * @param myActivity
      */
     Controller(Context myContext, MainActivity myActivity) {
         this.myContext = myContext;
@@ -39,7 +43,7 @@ public class Controller {
 
 
     /**
-     * Retourne l'etat de record
+     * <h4>Retourne l'etat de record</h4>
      *
      * @return
      */

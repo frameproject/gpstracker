@@ -22,10 +22,11 @@ public class Controller {
     ManageSettings manageData;
     MainActivity myActivity;
 
-    /**
-     * Constructeur
+
+    /** Constructeur
      *
      * @param myContext
+     * @param myActivity
      */
     Controller(Context myContext, MainActivity myActivity) {
         this.myContext = myContext;

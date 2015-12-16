@@ -70,8 +70,7 @@ public class Controller {
         HashMap<String, String> data = new HashMap<String, String>();
         loadMyData.restoreData(myContext, data);
 
-        if (pass.trim().isEmpty() || pass == null)
-            return false;
+        if (pass.trim().isEmpty() || pass == null) return false;
 
         if (loadMyData.encode(pass).equals(data.get("PASS"))) {
             unlock = true;
@@ -165,9 +164,10 @@ public class Controller {
      * @return
      */
     public boolean isStartOk(String tel, String pass) {
-        if (tel.trim().isEmpty() || pass.trim().isEmpty()) {
-            return false;
-        }
+
+        if(tel==null || pass==null) return false;
+
+        if (tel.trim().isEmpty() || pass.trim().isEmpty())  return false;
 
         // premiere utilisation du soft
         if (modeInit) {
@@ -204,6 +204,11 @@ public class Controller {
      * @return
      */
     public boolean onPauseOK(String tel, String pass) {
+
+        if(tel==null || pass==null) return false;
+
+        if (tel.trim().isEmpty() || pass.trim().isEmpty()) return false;
+
         if (unlock) {
             saveSettings(tel, pass);
             return true;

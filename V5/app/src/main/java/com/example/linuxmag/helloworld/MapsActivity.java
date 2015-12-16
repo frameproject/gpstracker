@@ -87,8 +87,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     public void update(String latitude, String longitude)
     {
-        System.out.println("MAJ CARTE = " + latitude + "  " + longitude);
-
         LatLng myPos = new LatLng(Float.valueOf(latitude), Float.valueOf(longitude));
 
         // effecer les precedents marker

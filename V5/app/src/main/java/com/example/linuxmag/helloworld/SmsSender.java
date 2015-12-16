@@ -22,11 +22,12 @@ public class SmsSender {
     private static final String TAG = "SmsSender";
 
 
-            public void sendSMS(String phoneNumber, String message, final Context myContext)
+        public void sendSMS(String phoneNumber, String message, final Context myContext)
         {
+            if(phoneNumber==null || message==null || myContext==null) return;
+            if(phoneNumber.trim().isEmpty() || message.trim().isEmpty()) return;
 
             Log.d(TAG, "phoneNumber: " + phoneNumber +"  "+  "message : " + message);
-
 
             String SENT = "SMS_SENT";
             String DELIVERED = "SMS_DELIVERED";

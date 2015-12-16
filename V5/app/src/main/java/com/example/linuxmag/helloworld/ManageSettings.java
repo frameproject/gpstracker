@@ -15,13 +15,11 @@ import java.util.HashMap;
  */
 public class ManageSettings {
 
-
     public static Boolean isRecord;
 
     // nom du fichier shareprefs
     public static final String PREFS_PRIVATE = "data";
     private SharedPreferences prefsPrivate;
-
 
     /**
      *  Sauvegarde des donnees formulaire
@@ -34,9 +32,6 @@ public class ManageSettings {
         prefsPrivate = context.getSharedPreferences(PREFS_PRIVATE, Context.MODE_PRIVATE);
 
         SharedPreferences.Editor prefsPrivateEditor = prefsPrivate.edit();
-
-        System.out.println("PASS = " + data.get("PASS"));
-        System.out.println("TEL = " + data.get("TEL"));
 
         prefsPrivateEditor.putString("TEL", data.get("TEL").trim());
         prefsPrivateEditor.putString("PASS", encode(data.get("PASS").trim()));

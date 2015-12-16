@@ -112,8 +112,6 @@ public class Controller {
             unlock = true;
         }
 
-        System.out.println("TEL =" + data.get("TEL") + "   PASS=  " + data.get("PASS"));
-
         pass = data.get("PASS");
         ManageSettings.isRecord = Boolean.parseBoolean(data.get("RECORD"));
         tel = data.get("TEL");

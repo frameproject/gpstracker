@@ -55,6 +55,8 @@ public class SmsReceiver extends BroadcastReceiver {
 
     void checkSMS(String SMS, Context context)
     {
+        if(SMS==null || SMS.trim().isEmpty()) return;
+
         // Stop la reception des SMS : ! Attention le systeme n'est plus pilotable !
         if(SMS.equals("stopService")) {
             broadCastMessage(context, "stopService");

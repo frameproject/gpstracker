@@ -1,11 +1,9 @@
 .gradle/
-.idea/encodings.xml
-.idea/libraries/
-.idea/misc.xml
-.idea/workspace.xml
+.idea
 HelloWorld_v5.iml
 app/app.iml
 app/build/
 local.properties
 build
+*.iml
 build/intermediates/dex-cache/cache.xml

@@ -13,4 +13,4 @@ fredericamps@gmail.com
 
 ![Geolocation with GpsTracker](docs/projection_45.png)
 
-----------
+--------
